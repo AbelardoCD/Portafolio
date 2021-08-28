@@ -1,0 +1,323 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    background: #121212;
+    position: relative;
+    font-size: 15px;
+}
+
+.top-image {
+    background: url('./assets/Eclipse.svg') center center no-repeat;
+    background-size: cover;
+    width: 50em;
+    height: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    box-shadow: 20px 20px 50px rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header-card header-card" "information perfilImage";
+    padding: 1em;
+    position: relative;
+}
+
+.information {
+    grid-area: information;
+    color: #F9FAFB;
+    margin-top: 2em;
+    padding: 3em;
+}
+
+.information h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.information h2 {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: end;
+    background: -webkit-linear-gradient(90deg, rgba(231, 94, 60, 1) 35%, rgba(191, 80, 0, 1) 100%, rgba(235, 6, 179, 1) 1000%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+}
+
+.information p {
+    font-size: 16px;
+}
+
+.header-card {
+    grid-area: header-card;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-card .main-Links ul {
+    display: flex;
+}
+
+.text-ingenering {
+    text-align: end;
+}
+
+.information .name-color {
+    background: -webkit-linear-gradient(0deg, rgba(253, 153, 45, 1) 100%, rgba(253, 76, 45, 0.9640231092436975) 1000%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: tomato;
+}
+
+.header-card .main-Links ul li {
+    list-style: none;
+}
+
+.header-card .main-Links ul li a {
+    text-decoration: none;
+    color: #c0c0c0;
+    font-size: 1.3em;
+}
+
+.header-card .main-Links ul .portafolio {
+    margin-left: 1em;
+}
+
+.perfil-image {
+    grid-area: perfilImage;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil-image .img {
+    grid-area: img;
+    width: 20em;
+    height: 20em;
+    background: url('./assets/perfil-3.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.perfil-image .social-media {
+    grid-area: social;
+}
+
+.perfil-image .img .dona {
+    background: url('./assets/Facebook_perspective_matte_s.png') center center no-repeat;
+    background-size: auto;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 0em;
+    left: 0;
+    transform: rotate(-25deg);
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.perfil-image .img .linkding {
+    background: url('./assets/Linkedin_perspective_matte.png') center center no-repeat;
+    background-size: auto;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: 0em;
+    right: 0;
+    transform: rotate(25deg);
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.perfil-image .img .email {
+    background: url('./assets/E-mail_perspective_matte.png') center center no-repeat;
+    background-size: auto;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: -2.5em;
+    left: 4em;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.perfil-image .img .telegram {
+    background: url('./assets/Telegram_perspective_matte.png') center center no-repeat;
+    background-size: auto;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    top: -2.5em;
+    right: 4em;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.perfil-image .img .git {
+    background: url('./assets/Vector.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 3;
+    width: 1.3em;
+    height: 1.3em;
+    padding: 0.2em;
+    cursor: pointer;
+    top: -3em;
+    right: 45%;
+}
+
+.perfil-image .img .dona:hover,
+.perfil-image .img .linkding:hover,
+.perfil-image .img .email:hover,
+.perfil-image .img .telegram:hover,
+.perfil-image .img .git:hover {
+    border-radius: 5px;
+    border-bottom: 1px solid #c0c0c0;
+    box-shadow: 1px 1px 40px #c0c0c0;
+}
+
+.boll {
+    background: url('./assets/Code_perspective_matte.png') center center no-repeat;
+    background-size: auto;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    right: -1.5em;
+    top: -2em;
+}
+
+.pill {
+    background: url('./assets/android.jpg.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 15em;
+    height: 15em;
+    z-index: 1;
+    left: -6em;
+    top: 60%;
+    transform: rotate(90deg);
+}
+
+
+/*.yellow-done {
+    background: url('./assets/js.png') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 10em;
+    height: 15em;
+    right: 0em;
+    bottom: 0;
+}*/
+
+.information p span {
+    font-family: italic;
+}
+
+.information p {
+    text-align: justify;
+}
+
+.header-card .main-word {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "header-card" "perfilImage" "information ";
+        padding: 1em;
+        position: relative;
+        backdrop-filter: blur(0);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .top-image {
+        width: 10em;
+        height: 10em;
+    }
+    .boll {
+        display: none;
+    }
+    .img {
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pill {
+        /* left: -10em;*/
+        top: 60%;
+        animation: hide-android 3s forwards;
+    }
+}
+
+@media (max-width: 890px) {
+    .information h1 {
+        font-size: 26px;
+    }
+    .information h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .information h1 {
+        font-size: 16px;
+    }
+    .information h2 {
+        font-size: 10px;
+    }
+}
+
+@keyframes hide-android {
+    0% {
+        left: -6em;
+    }
+    25% {
+        left: -7em;
+    }
+    50% {
+        left: -8em;
+    }
+    75% {
+        left: -9em;
+    }
+    100% {
+        left: -10em;
+    }
+}
