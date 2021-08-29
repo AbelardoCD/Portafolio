@@ -306,7 +306,7 @@ body {
 
 @keyframes hide-android {
     0% {
-        left: -6.2em;
+        left: -6em;
     }
     25% {
         left: -7em;
