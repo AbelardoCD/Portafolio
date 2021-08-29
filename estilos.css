@@ -179,15 +179,14 @@ body {
 }
 
 .perfil-image .img .git {
-    background: url('./assets/Vector.png') center center no-repeat;
+    background: url('./assets/logo-github 1.png') center center no-repeat;
     background-size: cover;
     position: absolute;
     z-index: 3;
-    width: 1.3em;
-    height: 1.3em;
-    padding: 0.2em;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
-    top: -3em;
+    top: -3.5em;
     right: 45%;
 }
 
